@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Create Task</h3>
+
+<form method="POST">
+
+<input class="form-control mb-3"
+name="title"
+placeholder="Task Title"
+required>
+
+<textarea
+class="form-control mb-3"
+name="description"
+placeholder="Task Description"></textarea>
+
+<button class="btn btn-success">Save</button>
+
+</form>
+
+{% endblock %}

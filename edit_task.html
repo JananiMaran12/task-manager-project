@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Edit Task</h3>
+
+<form method="POST">
+
+<input class="form-control mb-3"
+name="title"
+value="{{task.title}}">
+
+<textarea
+class="form-control mb-3"
+name="description">{{task.description}}</textarea>
+
+<select
+class="form-control mb-3"
+name="status">
+
+<option>Pending</option>
+<option>Completed</option>
+
+</select>
+
+<button class="btn btn-success">Update</button>
+
+</form>
+
+{% endblock %}
